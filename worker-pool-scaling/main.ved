@@ -1,0 +1,22 @@
+domain WorkerPool {
+  state {
+    desired: int
+    actual: int
+  }
+
+  goal CapacityReached {
+    predicate actual == desired
+  }
+
+  transition Provision {
+    step {
+      emit ProvisionWorker()
+    }
+  }
+
+  transition ObserveProvision {
+    step {
+      actual = actual + 1
+    }
+  }
+}
