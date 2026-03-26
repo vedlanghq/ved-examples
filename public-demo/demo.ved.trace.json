@@ -1,0 +1,44 @@
+[
+  {
+    "cycle": 1,
+    "domain": "Deployer",
+    "action": "PROCESS_MESSAGE",
+    "details": "ensure_capacity"
+  },
+  {
+    "cycle": 1,
+    "domain": "Deployer",
+    "action": "STATE_MUTATED",
+    "details": "\"nodes_running\": 3"
+  },
+  {
+    "cycle": 1,
+    "domain": "SYSTEM",
+    "action": "ROUTING_MESSAGE",
+    "details": "Payload: ensure_capacity, Target: Deployer"
+  },
+  {
+    "cycle": 2,
+    "domain": "Deployer",
+    "action": "GOAL_MET",
+    "details": "HighlyAvailable"
+  },
+  {
+    "cycle": 2,
+    "domain": "Deployer",
+    "action": "PROCESS_MESSAGE",
+    "details": "ensure_capacity"
+  },
+  {
+    "cycle": 2,
+    "domain": "Deployer",
+    "action": "STATE_MUTATED",
+    "details": "\"nodes_running\": 3"
+  },
+  {
+    "cycle": 3,
+    "domain": "Deployer",
+    "action": "GOAL_MET",
+    "details": "HighlyAvailable"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "cycle": 1,
+  "domains": {
+    "Counter": {
+      "state": {
+        "memory": {
+          "value": 1
+        }
+      },
+      "mailbox_high": [],
+      "mailbox_normal": []
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "cycle": 2,
+  "domains": {
+    "Deployer": {
+      "state": {
+        "memory": {
+          "nodes_running": 3
+        }
+      },
+      "mailbox_high": [],
+      "mailbox_normal": []
+    }
+  }
+}
