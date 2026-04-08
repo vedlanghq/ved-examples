@@ -1,14 +1,1 @@
-[
-  {
-    "cycle": 1,
-    "domain": "Counter",
-    "action": "PROCESS_MESSAGE",
-    "details": "Increment"
-  },
-  {
-    "cycle": 1,
-    "domain": "Counter",
-    "action": "STATE_MUTATED",
-    "details": "\"value\": 1"
-  }
-]
+[]
