@@ -1,0 +1,29 @@
+domain NodeOne {
+    scope { domain }
+    capability { messaging, send_to:NodeTwo }
+    state { actual: int target_val: int }
+    goal Sync { priority 100 target actual == target_val strategy { Ping } }
+    transition Boot { capability { messaging, send_to:NodeTwo } slice step { target_val = 333333 } }
+    transition Ping { capability { messaging, send_to:NodeTwo } slice step { actual = actual + 1 send("NodeTwo", "Pong") } }
+    transition Pong { capability { messaging, send_to:NodeTwo } slice step { actual = actual + 1 } }
+}
+
+domain NodeTwo {
+    scope { domain }
+    capability { messaging, send_to:NodeThree }
+    state { actual: int target_val: int }
+    goal Sync { priority 100 target actual == target_val strategy { Ping } }
+    transition Boot { capability { messaging, send_to:NodeThree } slice step { target_val = 333333 } }
+    transition Ping { capability { messaging, send_to:NodeThree } slice step { actual = actual + 1 send("NodeThree", "Pong") } }
+    transition Pong { capability { messaging, send_to:NodeThree } slice step { actual = actual + 1 } }
+}
+
+domain NodeThree {
+    scope { domain }
+    capability { messaging, send_to:NodeOne }
+    state { actual: int target_val: int }
+    goal Sync { priority 100 target actual == target_val strategy { Ping } }
+    transition Boot { capability { messaging, send_to:NodeOne } slice step { target_val = 333334 } }
+    transition Ping { capability { messaging, send_to:NodeOne } slice step { actual = actual + 1 send("NodeOne", "Pong") } }
+    transition Pong { capability { messaging, send_to:NodeOne } slice step { actual = actual + 1 } }
+}

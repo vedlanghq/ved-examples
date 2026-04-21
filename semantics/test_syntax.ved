@@ -1,9 +1,9 @@
 domain Testing {
     state {
-        val string
+        val : string
     }
 
     goal Pure {
-        target = 3 // Missing target predicate and invalid assignment
+        target == 3 // Missing target predicate and invalid assignment
     }
 }

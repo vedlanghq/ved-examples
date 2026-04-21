@@ -1,22 +1,47 @@
 domain WorkerPool {
-  state {
-    desired: int
-    actual: int
-  }
-
-  goal CapacityReached {
-    predicate actual == desired
-  }
-
-  transition Provision {
-    step {
-      emit ProvisionWorker()
+    scope { domain }
+    capability { messaging, send_to:WorkerPool }
+    
+    state {
+        desired: int
+        actual: int
+        booted: bool
+        provision_in_flight: int
     }
-  }
 
-  transition ObserveProvision {
-    step {
-      actual = actual + 1
+    goal BootUp {
+        priority 255
+        target booted == true
+        strategy { Boot }
     }
-  }
+
+    goal CapacityReached {
+        priority 10
+        target actual + provision_in_flight == desired
+        strategy { Provision }
+    }
+
+    transition Boot {
+        capability { messaging, send_to:WorkerPool }
+        slice step {
+            desired = 10000000000
+            booted = true
+        }
+    }
+
+    transition Provision {
+        capability { messaging, send_to:WorkerPool }
+        slice step {
+            provision_in_flight = provision_in_flight + 10000000
+            send("WorkerPool", "ObserveProvision")
+        }
+    }
+
+    transition ObserveProvision {
+        capability { messaging, send_to:WorkerPool }
+        slice step {
+            provision_in_flight = provision_in_flight - 10000000
+            actual = actual + 10000000
+        }
+    }
 }
