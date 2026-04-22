@@ -1,0 +1,85 @@
+{
+  "cycle": 10,
+  "domains": {
+    "WorkerPool": {
+      "state": {
+        "memory": {
+          "actual": 20000000,
+          "booted": 1,
+          "desired": 10000000000,
+          "provision_in_flight": 50000000
+        }
+      },
+      "mailbox_high": [
+        {
+          "id": "WorkerPool_recovery_Provision_10",
+          "source_domain": "WorkerPool",
+          "target_domain": "WorkerPool",
+          "payload": "Provision",
+          "priority": 1,
+          "clock": 23
+        }
+      ],
+      "mailbox_normal": [
+        {
+          "id": "WorkerPool_11_4",
+          "source_domain": "",
+          "target_domain": "WorkerPool",
+          "payload": "ObserveProvision",
+          "priority": 0,
+          "clock": 11
+        },
+        {
+          "id": "WorkerPool_14_5",
+          "source_domain": "",
+          "target_domain": "WorkerPool",
+          "payload": "ObserveProvision",
+          "priority": 0,
+          "clock": 14
+        },
+        {
+          "id": "WorkerPool_17_7",
+          "source_domain": "",
+          "target_domain": "WorkerPool",
+          "payload": "ObserveProvision",
+          "priority": 0,
+          "clock": 17
+        },
+        {
+          "id": "WorkerPool_20_8",
+          "source_domain": "",
+          "target_domain": "WorkerPool",
+          "payload": "ObserveProvision",
+          "priority": 0,
+          "clock": 20
+        },
+        {
+          "id": "WorkerPool_23_9",
+          "source_domain": "",
+          "target_domain": "WorkerPool",
+          "payload": "ObserveProvision",
+          "priority": 0,
+          "clock": 23
+        }
+      ],
+      "effect_journal": {
+        "states": {
+          "WorkerPool_20_8": "Executing",
+          "WorkerPool_recovery_Provision_5": "Recorded",
+          "WorkerPool_recovery_Provision_6": "Recorded",
+          "WorkerPool_8_3": "Executing",
+          "WorkerPool_recovery_Provision_2": "Recorded",
+          "WorkerPool_recovery_Provision_4": "Recorded",
+          "WorkerPool_17_7": "Executing",
+          "WorkerPool_14_5": "Executing",
+          "WorkerPool_5_2": "Executing",
+          "WorkerPool_recovery_Provision_8": "Recorded",
+          "WorkerPool_23_9": "Executing",
+          "WorkerPool_recovery_Provision_9": "Recorded",
+          "WorkerPool_recovery_Provision_3": "Recorded",
+          "WorkerPool_11_4": "Executing"
+        }
+      }
+    }
+  }
+}

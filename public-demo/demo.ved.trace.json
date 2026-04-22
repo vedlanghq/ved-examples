@@ -1,0 +1,92 @@
+[
+  {
+    "cycle": 1,
+    "domain": "Deployer",
+    "action": "GOAL_FAILED",
+    "details": "HighlyAvailable"
+  },
+  {
+    "cycle": 1,
+    "domain": "Deployer",
+    "action": "PROCESS_MESSAGE",
+    "details": "ensure_capacity"
+  },
+  {
+    "cycle": 1,
+    "domain": "Deployer",
+    "action": "STATE_MUTATED",
+    "details": "\"nodes_running\": 1"
+  },
+  {
+    "cycle": 1,
+    "domain": "SYSTEM",
+    "action": "ROUTING_MESSAGE",
+    "details": "Payload: ensure_capacity, Target: Deployer"
+  },
+  {
+    "cycle": 2,
+    "domain": "Deployer",
+    "action": "GOAL_FAILED",
+    "details": "HighlyAvailable"
+  },
+  {
+    "cycle": 2,
+    "domain": "Deployer",
+    "action": "PROCESS_MESSAGE",
+    "details": "ensure_capacity"
+  },
+  {
+    "cycle": 2,
+    "domain": "Deployer",
+    "action": "STATE_MUTATED",
+    "details": "\"nodes_running\": 2"
+  },
+  {
+    "cycle": 2,
+    "domain": "SYSTEM",
+    "action": "ROUTING_MESSAGE",
+    "details": "Payload: ensure_capacity, Target: Deployer"
+  },
+  {
+    "cycle": 3,
+    "domain": "Deployer",
+    "action": "GOAL_FAILED",
+    "details": "HighlyAvailable"
+  },
+  {
+    "cycle": 3,
+    "domain": "Deployer",
+    "action": "PROCESS_MESSAGE",
+    "details": "ensure_capacity"
+  },
+  {
+    "cycle": 3,
+    "domain": "Deployer",
+    "action": "STATE_MUTATED",
+    "details": "\"nodes_running\": 3"
+  },
+  {
+    "cycle": 3,
+    "domain": "SYSTEM",
+    "action": "ROUTING_MESSAGE",
+    "details": "Payload: ensure_capacity, Target: Deployer"
+  },
+  {
+    "cycle": 4,
+    "domain": "Deployer",
+    "action": "GOAL_MET",
+    "details": "HighlyAvailable"
+  },
+  {
+    "cycle": 4,
+    "domain": "Deployer",
+    "action": "PROCESS_MESSAGE",
+    "details": "ensure_capacity"
+  },
+  {
+    "cycle": 4,
+    "domain": "Deployer",
+    "action": "STATE_MUTATED",
+    "details": "\"nodes_running\": 3"
+  }
+]

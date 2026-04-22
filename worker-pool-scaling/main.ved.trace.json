@@ -1,0 +1,296 @@
+[
+  {
+    "cycle": 1,
+    "domain": "WorkerPool",
+    "action": "GOAL_MET",
+    "details": "CapacityReached"
+  },
+  {
+    "cycle": 1,
+    "domain": "WorkerPool",
+    "action": "GOAL_FAILED",
+    "details": "BootUp"
+  },
+  {
+    "cycle": 1,
+    "domain": "WorkerPool",
+    "action": "PROCESS_MESSAGE",
+    "details": "Boot"
+  },
+  {
+    "cycle": 1,
+    "domain": "WorkerPool",
+    "action": "STATE_MUTATED",
+    "details": "\"actual\": 0, \"booted\": 1, \"desired\": 10000000000, \"provision_in_flight\": 0"
+  },
+  {
+    "cycle": 2,
+    "domain": "WorkerPool",
+    "action": "GOAL_MET",
+    "details": "BootUp"
+  },
+  {
+    "cycle": 2,
+    "domain": "WorkerPool",
+    "action": "GOAL_FAILED",
+    "details": "CapacityReached"
+  },
+  {
+    "cycle": 2,
+    "domain": "WorkerPool",
+    "action": "PROCESS_MESSAGE",
+    "details": "Provision"
+  },
+  {
+    "cycle": 2,
+    "domain": "WorkerPool",
+    "action": "STATE_MUTATED",
+    "details": "\"actual\": 0, \"booted\": 1, \"desired\": 10000000000, \"provision_in_flight\": 10000000"
+  },
+  {
+    "cycle": 2,
+    "domain": "SYSTEM",
+    "action": "ROUTING_MESSAGE",
+    "details": "Payload: ObserveProvision, Target: WorkerPool"
+  },
+  {
+    "cycle": 3,
+    "domain": "WorkerPool",
+    "action": "GOAL_MET",
+    "details": "BootUp"
+  },
+  {
+    "cycle": 3,
+    "domain": "WorkerPool",
+    "action": "GOAL_FAILED",
+    "details": "CapacityReached"
+  },
+  {
+    "cycle": 3,
+    "domain": "WorkerPool",
+    "action": "PROCESS_MESSAGE",
+    "details": "Provision"
+  },
+  {
+    "cycle": 3,
+    "domain": "WorkerPool",
+    "action": "STATE_MUTATED",
+    "details": "\"actual\": 0, \"booted\": 1, \"desired\": 10000000000, \"provision_in_flight\": 20000000"
+  },
+  {
+    "cycle": 3,
+    "domain": "SYSTEM",
+    "action": "ROUTING_MESSAGE",
+    "details": "Payload: ObserveProvision, Target: WorkerPool"
+  },
+  {
+    "cycle": 4,
+    "domain": "WorkerPool",
+    "action": "GOAL_MET",
+    "details": "BootUp"
+  },
+  {
+    "cycle": 4,
+    "domain": "WorkerPool",
+    "action": "GOAL_FAILED",
+    "details": "CapacityReached"
+  },
+  {
+    "cycle": 4,
+    "domain": "WorkerPool",
+    "action": "PROCESS_MESSAGE",
+    "details": "Provision"
+  },
+  {
+    "cycle": 4,
+    "domain": "WorkerPool",
+    "action": "STATE_MUTATED",
+    "details": "\"actual\": 0, \"booted\": 1, \"desired\": 10000000000, \"provision_in_flight\": 30000000"
+  },
+  {
+    "cycle": 4,
+    "domain": "SYSTEM",
+    "action": "ROUTING_MESSAGE",
+    "details": "Payload: ObserveProvision, Target: WorkerPool"
+  },
+  {
+    "cycle": 5,
+    "domain": "WorkerPool",
+    "action": "GOAL_MET",
+    "details": "BootUp"
+  },
+  {
+    "cycle": 5,
+    "domain": "WorkerPool",
+    "action": "GOAL_FAILED",
+    "details": "CapacityReached"
+  },
+  {
+    "cycle": 5,
+    "domain": "WorkerPool",
+    "action": "PROCESS_MESSAGE",
+    "details": "Provision"
+  },
+  {
+    "cycle": 5,
+    "domain": "WorkerPool",
+    "action": "STATE_MUTATED",
+    "details": "\"actual\": 0, \"booted\": 1, \"desired\": 10000000000, \"provision_in_flight\": 40000000"
+  },
+  {
+    "cycle": 5,
+    "domain": "SYSTEM",
+    "action": "ROUTING_MESSAGE",
+    "details": "Payload: ObserveProvision, Target: WorkerPool"
+  },
+  {
+    "cycle": 6,
+    "domain": "WorkerPool",
+    "action": "GOAL_MET",
+    "details": "BootUp"
+  },
+  {
+    "cycle": 6,
+    "domain": "WorkerPool",
+    "action": "GOAL_FAILED",
+    "details": "CapacityReached"
+  },
+  {
+    "cycle": 6,
+    "domain": "WorkerPool",
+    "action": "PROCESS_MESSAGE",
+    "details": "ObserveProvision"
+  },
+  {
+    "cycle": 6,
+    "domain": "WorkerPool",
+    "action": "STATE_MUTATED",
+    "details": "\"actual\": 10000000, \"booted\": 1, \"desired\": 10000000000, \"provision_in_flight\": 30000000"
+  },
+  {
+    "cycle": 7,
+    "domain": "WorkerPool",
+    "action": "GOAL_MET",
+    "details": "BootUp"
+  },
+  {
+    "cycle": 7,
+    "domain": "WorkerPool",
+    "action": "GOAL_FAILED",
+    "details": "CapacityReached"
+  },
+  {
+    "cycle": 7,
+    "domain": "WorkerPool",
+    "action": "PROCESS_MESSAGE",
+    "details": "Provision"
+  },
+  {
+    "cycle": 7,
+    "domain": "WorkerPool",
+    "action": "STATE_MUTATED",
+    "details": "\"actual\": 10000000, \"booted\": 1, \"desired\": 10000000000, \"provision_in_flight\": 40000000"
+  },
+  {
+    "cycle": 7,
+    "domain": "SYSTEM",
+    "action": "ROUTING_MESSAGE",
+    "details": "Payload: ObserveProvision, Target: WorkerPool"
+  },
+  {
+    "cycle": 8,
+    "domain": "WorkerPool",
+    "action": "GOAL_MET",
+    "details": "BootUp"
+  },
+  {
+    "cycle": 8,
+    "domain": "WorkerPool",
+    "action": "GOAL_FAILED",
+    "details": "CapacityReached"
+  },
+  {
+    "cycle": 8,
+    "domain": "WorkerPool",
+    "action": "PROCESS_MESSAGE",
+    "details": "Provision"
+  },
+  {
+    "cycle": 8,
+    "domain": "WorkerPool",
+    "action": "STATE_MUTATED",
+    "details": "\"actual\": 10000000, \"booted\": 1, \"desired\": 10000000000, \"provision_in_flight\": 50000000"
+  },
+  {
+    "cycle": 8,
+    "domain": "SYSTEM",
+    "action": "ROUTING_MESSAGE",
+    "details": "Payload: ObserveProvision, Target: WorkerPool"
+  },
+  {
+    "cycle": 9,
+    "domain": "WorkerPool",
+    "action": "GOAL_MET",
+    "details": "BootUp"
+  },
+  {
+    "cycle": 9,
+    "domain": "WorkerPool",
+    "action": "GOAL_FAILED",
+    "details": "CapacityReached"
+  },
+  {
+    "cycle": 9,
+    "domain": "WorkerPool",
+    "action": "PROCESS_MESSAGE",
+    "details": "Provision"
+  },
+  {
+    "cycle": 9,
+    "domain": "WorkerPool",
+    "action": "STATE_MUTATED",
+    "details": "\"actual\": 10000000, \"booted\": 1, \"desired\": 10000000000, \"provision_in_flight\": 60000000"
+  },
+  {
+    "cycle": 9,
+    "domain": "SYSTEM",
+    "action": "ROUTING_MESSAGE",
+    "details": "Payload: ObserveProvision, Target: WorkerPool"
+  },
+  {
+    "cycle": 10,
+    "domain": "WorkerPool",
+    "action": "GOAL_MET",
+    "details": "BootUp"
+  },
+  {
+    "cycle": 10,
+    "domain": "WorkerPool",
+    "action": "GOAL_FAILED",
+    "details": "CapacityReached"
+  },
+  {
+    "cycle": 10,
+    "domain": "WorkerPool",
+    "action": "PROCESS_MESSAGE",
+    "details": "ObserveProvision"
+  },
+  {
+    "cycle": 10,
+    "domain": "WorkerPool",
+    "action": "STATE_MUTATED",
+    "details": "\"actual\": 20000000, \"booted\": 1, \"desired\": 10000000000, \"provision_in_flight\": 50000000"
+  },
+  {
+    "cycle": 11,
+    "domain": "WorkerPool",
+    "action": "GOAL_MET",
+    "details": "BootUp"
+  },
+  {
+    "cycle": 11,
+    "domain": "WorkerPool",
+    "action": "GOAL_FAILED",
+    "details": "CapacityReached"
+  }
+]

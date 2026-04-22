@@ -1,4 +1,9 @@
 domain Deployer {
+  capability { 
+    messaging, 
+    send_to:Deployer 
+  }
+  
   state {
     nodes_running: int
   }
@@ -8,6 +13,11 @@ domain Deployer {
   }
 
   transition ensure_capacity {
+    capability { 
+      messaging, 
+      send_to:Deployer
+    }
+    
     step {
       if nodes_running < 3 {
         nodes_running = nodes_running + 1
