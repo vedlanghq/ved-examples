@@ -10,7 +10,7 @@ domain WorkerPool {
     }
 
     goal BootUp {
-        priority 255
+        priority 5
         target booted == true
         strategy { Boot }
     }
@@ -24,7 +24,7 @@ domain WorkerPool {
     transition Boot {
         capability { messaging, send_to:WorkerPool }
         slice step {
-            desired = 10000000000
+            desired = 30000
             booted = true
         }
     }
@@ -32,7 +32,7 @@ domain WorkerPool {
     transition Provision {
         capability { messaging, send_to:WorkerPool }
         slice step {
-            provision_in_flight = provision_in_flight + 10000000
+            provision_in_flight = provision_in_flight + 10000
             send("WorkerPool", "ObserveProvision")
         }
     }
@@ -40,8 +40,8 @@ domain WorkerPool {
     transition ObserveProvision {
         capability { messaging, send_to:WorkerPool }
         slice step {
-            provision_in_flight = provision_in_flight - 10000000
-            actual = actual + 10000000
+            provision_in_flight = provision_in_flight - 10000
+            actual = actual + 10000
         }
     }
 }

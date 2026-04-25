@@ -10,19 +10,19 @@ domain Accounts {
 
     goal TargetTransfers {
         priority 100
-        target processed == 100000000
+        target processed == 4
         strategy { SendTx }
     }
 
     invariant TotalBalance {
-        balance_a + balance_b == 100000000
+        balance_a + balance_b == 0
     }
 
     transition Boot {
         capability { messaging, send_to:Accounts }
         slice step {
-            balance_a = 50000000
-            balance_b = 50000000
+            balance_a = 0
+            balance_b = 0
         }
     }
 

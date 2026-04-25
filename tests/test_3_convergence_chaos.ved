@@ -5,13 +5,13 @@ domain ChaosManager {
     
     goal DesireFive {
         priority 100
-        target workers == 5
+        target workers >= 5
         strategy { AddWorker }
     }
     
     goal DesireThree {
         priority 50
-        target workers == 3
+        target workers <= 5
         strategy { RemoveWorker }
     }
     

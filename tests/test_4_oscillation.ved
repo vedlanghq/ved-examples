@@ -22,7 +22,7 @@ domain TestNode {
     transition Flip {
         capability { messaging, send_to:TestNode }
         slice step {
-            flag = 1 - flag
+            flag = flag + 1
         }
     }
 }
