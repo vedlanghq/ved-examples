@@ -1,8 +1,8 @@
-# Ved Examples
+# Lexum Examples
 
-This repository contains small illustrative programs demonstrating how Ved models deterministic orchestration behaviour for long-running systems.
+This repository contains small illustrative programs demonstrating how Lexum models deterministic orchestration behaviour for long-running systems.
 
-Ved programs describe:
+Lexum programs describe:
 
 - persistent system state
 - desired convergence goals
@@ -16,6 +16,6 @@ These examples are conceptual and may evolve alongside the runtime.
 Example execution workflow:
 
 ```bash
-ved compile main.ved
-ved run bundle.vedx
+Lexum compile main.Lexum
+Lexum run bundle.vedx
 ```
