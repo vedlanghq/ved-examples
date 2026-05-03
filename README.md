@@ -16,6 +16,6 @@ These examples are conceptual and may evolve alongside the runtime.
 Example execution workflow:
 
 ```bash
-Lexum compile main.Lexum
-Lexum run bundle.vedx
+Lexum compile main.Lex
+Lexum run bundle.lex
 ```
